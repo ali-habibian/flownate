@@ -1,37 +1,88 @@
+# =========================================
+# Laravel / PHP
+# =========================================
+
 /vendor/
-node_modules/
+/storage/*.key
+/storage/app/*.key
+/storage/logs/*.log
+/storage/framework/*
+/storage/debugbar/*
+/bootstrap/cache/*.php
+
+.env
+.env.*
+!.env.example
+
+# Laravel specific
+/public/storage
+/public/hot
+/public/vendor
+
+# Laravel Mix / Vite
+/public/build
+/public/assets
+
+# =========================================
+# Node.js
+# =========================================
+
+/node_modules/
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# =========================================
+# Docker
+# =========================================
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+/docker-compose.override.yml
+/.docker
+/.dockerignore
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# Containers & volumes
+docker-data/
+*.tar
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# =========================================
+# Composer
+# =========================================
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
+composer.lock
 auth.json
 
-# XAMPP / Windows
+# =========================================
+# JetBrains (PhpStorm)
+/.idea/
+/*.iml
+
+# =========================================
+# VSCode
+.vscode/
+
+# =========================================
+# IDE / Editor Junk
+*.sublime-workspace
+*.sublime-project
+
+# =========================================
+# OS Files
+.DS_Store
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# =========================================
+# Logs / Temp
 *.log
-.DS_Store
+*.cache
+*.tmp
+.phpunit.result.cache
+.phpactor.json
+
+# =========================================
+# Other
+/coverage
+/.vagrant
+Homestead.yaml
+Homestead.json
